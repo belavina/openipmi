@@ -50,6 +50,11 @@ sensor_set_event_support 0x30 0 1 enable scanning per-state \
 	000111111000000 000111111000000 \
 	000111111000000 000111111000000
 
+# Power supply sensors
+# sensor_add\fP \fImc-addr\fP \fILUN\fP \fIsensor-num\fP \fIsensor-type\fP \fIevent-reading-code\fP [\fIpoll\fP \fIpoll_rate\fP \fIpoll_type\fP \fIpoll_type_options\fP] [event-only]
+sensor_add 0x20  0    8     8     0x6f
+sensor_add 0x20  0    9     8     0x6f
+
 mc_enable 0x30
 
 # Turn on the BMC
