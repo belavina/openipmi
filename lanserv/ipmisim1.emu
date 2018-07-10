@@ -54,6 +54,8 @@ sensor_set_event_support 0x30 0 1 enable scanning per-state \
 # sensor_add\fP \fImc-addr\fP \fILUN\fP \fIsensor-num\fP \fIsensor-type\fP \fIevent-reading-code\fP [\fIpoll\fP \fIpoll_rate\fP \fIpoll_type\fP \fIpoll_type_options\fP] [event-only]
 sensor_add 0x20  0    8     8     0x6f
 sensor_add 0x20  0    9     8     0x6f
+sensor_add 0x20  0   10     2     1 poll 2000 file "/home/obelavina/dev/openipmi/lanserv/VOUT_1"
+sensor_add 0x20  0   15     3     1 poll 2000 file "/home/obelavina/dev/openipmi/lanserv/VOUT_1"
 
 mc_enable 0x30
 
